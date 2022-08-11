@@ -1,10 +1,10 @@
 .main-page {
     color: #000000;
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
+   
+    
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1,2px;
     letter-spacing: 0.03em;
 }
 
@@ -15,11 +15,11 @@
 
 .links {
     color: #212121;
-    font-family: 'Roboto';
-    font-style: normal;
+    
+    
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1,1px;
     letter-spacing: 0.02em;
 }
 
@@ -34,11 +34,11 @@
 
 .contacts {
     color: #212121;
-    font-family: 'Roboto';
-    font-style: normal;
+   
+    
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1,1px;
     letter-spacing: 0.02em;
 }
 
@@ -49,20 +49,20 @@
 .web {
     color: #2196F3;
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
+  
+   
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1,2px;
     letter-spacing: 0.03em;
 }
 
 .title {
     color: #FFFFFF;
-    font-family: 'Roboto';
-    font-style: normal;
+   
+   
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1,4px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -82,11 +82,11 @@
     height: 30px;
     left: 724px;
     top: 440px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+   
+   
+   
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1,9px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -113,11 +113,11 @@
 }
 
 .work {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+    
+   
+    
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1,2px;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -125,11 +125,11 @@
 }
 
 .name {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+   
+    
+    
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1,1px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -137,22 +137,22 @@
 }
 
 .article {
-    font-family: 'Roboto';
-    font-style: normal;
+   
+    
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1,7px;
     letter-spacing: 0.03em;
 
     color: #757575;
 }
 
 .our-team {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+   
+   
+    
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1,2px;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -170,10 +170,10 @@
 
 .w-footer {
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
+   
+    
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1,2px;
     letter-spacing: 0.03em;
 
     color: #2196F3;
@@ -181,32 +181,32 @@
 
 .s-footer {
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
+   
+   
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1,2px;
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
 }
 
 .place {
-    font-family: 'Roboto';
-    font-style: normal;
+   
+   
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    line-height: 1,7px;
+    letter-spacing: 0,03em;
 
     color: #FFFFFF;
 }
 
 .contacts-footer {
-    font-family: 'Roboto';
-    font-style: normal;
+   
+  
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1,7px;
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
@@ -214,4 +214,13 @@
 
 .list-footer {
     list-style: none;
+}
+.list-about {
+    list-style: none;
+    display: flex;
+}
+body {
+    font-family: 'Roboto';
+    font-weight: 700;
+    
 }
