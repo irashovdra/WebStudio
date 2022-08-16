@@ -1,0 +1,49 @@
+/* хедер */
+.main-page {
+    color: #000000;
+    font-family: 'Raleway';
+    margin: 24px 1176px 2294px 279px;
+    
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.web {
+    color: #2196F3;
+    font-family: 'Raleway';
+   
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.list-contacts {
+    list-style: none;
+    display: flex;
+}
+
+/* мейн */
+.main-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.item {
+    width: 370px;
+        height: 404px;
+        left: 215px;
+        top: 262px;
+        background: #FFFFFF;
+            border: 1px solid #EEEEEE;
+}
+
+.list-links {
+    list-style: none;
+    display: flex;
+}
+
+.buttons-list {
+    list-style: none;
+}

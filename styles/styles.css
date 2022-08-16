@@ -16,6 +16,16 @@ body {
     letter-spacing: 0.03em;
 }
 
+.web {
+    color: #2196F3;
+    font-family: 'Raleway';
+
+
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
 .list-links {
     list-style: none;
     display: flex;
@@ -55,15 +65,7 @@ body {
     color: #2196F3;
 }
 
-.web {
-    color: #2196F3;
-    font-family: 'Raleway';
-  
-   
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-}
+
 
 .title {
     color: #FFFFFF;
