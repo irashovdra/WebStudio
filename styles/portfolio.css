@@ -1,16 +1,25 @@
+body {
+    font-family: "Roboto";
+}
+
 /* хедер */
 .header {
     width: 1600px;
         height: 80px;
         left: 0px;
         top: 0px;
-    
+        
         background: #FFFFFF;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 .main-page {
     color: #000000;
     font-family: 'Raleway';
-    margin: 24px 1176px 2294px 279px;
+    margin: 24px 93px 25px 279px;
     
     font-size: 26px;
     line-height: 1.2;
@@ -54,7 +63,7 @@
 
 .links {
     color: #212121;
-
+    
 
     font-weight: 500;
     font-size: 14px;
@@ -68,15 +77,15 @@
 }
 
 a[href="./index.html"] {
-    margin: 32px 55px 0px 517px;
+    margin: 32px 55px 32px 0px;
 }
 
 a[href="./portfolio.html"] {
-    margin: 32px 55px 0px 0px;
+    margin: 32px 55px 32px 0px;
 }
 
 a[href="/contacts"] {
-    margin: 32px 335px 0px 0px;
+    margin: 32px 335px 32px 0px;
 }
 
 .list-contacts {
@@ -99,7 +108,7 @@ a[href="/contacts"] {
 }
 
 a[href="mailto:info@devstudio.com"] {
-    margin: 32px 50px 0px 1142px;
+    margin: 32px 50px 32px 0px;
 }
 
 a[href="tel:+380961111111"] {
@@ -117,39 +126,125 @@ a[href="tel:+380961111111"] {
 .btn1 {
     background-color: #F5F4FA;
     margin: 94px 8px 50px 495px;
-    
+    width: 73px;
+        height: 38px;
+        left: 495px;
+        top: 174px;
+        background: #2196F3;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.03em;
+        
+            color: #FFFFFF;
 }
 .btn2 {
     background-color: #F5F4FA;
     margin: 94px 8px 50px 0px;
+    width: 128px;
+        height: 38px;
+        left: 576px;
+        top: 174px;
+        border-radius: 4px;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #212121;
 }
 .btn3 {
     background-color: #F5F4FA;
     margin: 94px 8px 50px 0px;
+    width: 145px;
+        height: 38px;
+        left: 712px;
+        top: 174px;
+        border-radius: 4px;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #212121;
 }
 .btn4 {
     background-color: #F5F4FA;
     margin: 94px 8px 50px 0px;
+    width: 103px;
+        height: 38px;
+        left: 865px;
+        top: 174px;
+        border-radius: 4px;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #212121;
 }
 .btn5 {
     background-color: #F5F4FA;
     margin: 94px 494px 50px 0px;
+    width: 130px;
+        height: 38px;
+        left: 976px;
+        top: 174px;
+        border-radius: 4px;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #212121;
 }
 
-.btn1:hover {
-    color: #2196F3;
-}
 .btn2:hover {
-    color: #2196F3;
+    background: #2196F3;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
 }
 .btn3:hover {
-    color: #2196F3;
+background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
 }
 .btn4:hover {
-    color: #2196F3;
+    background: #2196F3;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
 }
 .btn5:hover {
-    color: #2196F3;
+    background: #2196F3;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
 }
 
 /* Карточки */
@@ -179,6 +274,39 @@ li[title="card8"] {
 }
 li[title="card9"] {
     margin: 0px 0px 94px 0px;
+}
+
+.title {
+    width: 322px;
+        height: 36px;
+        left: 639px;
+        top: 576px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        /* padding: 20px 24px 4px 24px; */
+    
+        letter-spacing: 0.06em;
+    
+        color: #212121;
+}
+
+.paragraph {
+    width: 322px;
+        height: 30px;
+        left: 639px;
+        top: 616px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        /* identical to box height, or 188% */
+    
+        letter-spacing: 0.03em;
+    
+        color: #757575;
 }
 
 /* Футер */
