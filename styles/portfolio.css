@@ -1,4 +1,12 @@
 /* хедер */
+.header {
+    width: 1600px;
+        height: 80px;
+        left: 0px;
+        top: 0px;
+    
+        background: #FFFFFF;
+}
 .main-page {
     color: #000000;
     font-family: 'Raleway';
@@ -23,7 +31,7 @@
     display: flex;
 }
 
-/* мейн */
+
 .main-list {
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +52,207 @@
     display: flex;
 }
 
+.links {
+    color: #212121;
+
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+}
+
+.links:hover {
+    color: #2196F3;
+}
+
+a[href="./index.html"] {
+    margin: 32px 55px 0px 517px;
+}
+
+a[href="./portfolio.html"] {
+    margin: 32px 55px 0px 0px;
+}
+
+a[href="/contacts"] {
+    margin: 32px 335px 0px 0px;
+}
+
+.list-contacts {
+    list-style: none;
+    display: flex;
+}
+
+.contacts {
+    color: #212121;
+
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.contacts:hover {
+    color: #2196F3;
+}
+
+a[href="mailto:info@devstudio.com"] {
+    margin: 32px 50px 0px 1142px;
+}
+
+a[href="tel:+380961111111"] {
+    margin: 32px 151px 0px 0px;
+}
+
+/* Мейн */
+
+/* Кнопки */
 .buttons-list {
     list-style: none;
+    display: flex;
 }
+
+.btn1 {
+    background-color: #F5F4FA;
+    margin: 94px 8px 50px 495px;
+    
+}
+.btn2 {
+    background-color: #F5F4FA;
+    margin: 94px 8px 50px 0px;
+}
+.btn3 {
+    background-color: #F5F4FA;
+    margin: 94px 8px 50px 0px;
+}
+.btn4 {
+    background-color: #F5F4FA;
+    margin: 94px 8px 50px 0px;
+}
+.btn5 {
+    background-color: #F5F4FA;
+    margin: 94px 494px 50px 0px;
+}
+
+.btn1:hover {
+    color: #2196F3;
+}
+.btn2:hover {
+    color: #2196F3;
+}
+.btn3:hover {
+    color: #2196F3;
+}
+.btn4:hover {
+    color: #2196F3;
+}
+.btn5:hover {
+    color: #2196F3;
+}
+
+/* Карточки */
+li[title="card1"] {
+    margin: 0px 30px 30px 215px;
+}
+li[title="card2"] {
+    margin: 0px 30px 30px 0px;
+}
+li[title="card3"] {
+    margin: 0px 0px 30px 0px;
+}
+li[title="card4"] {
+    margin: 0px 30px 30px 215px;
+}
+li[title="card5"] {
+    margin: 0px 30px 30px 0px;
+}
+li[title="card6"] {
+    margin: 0px 0px 30px 0px;
+}
+li[title="card7"] {
+    margin: 0px 30px 94px 215px;
+}
+li[title="card8"] {
+    margin: 0px 30px 94px 0px;
+}
+li[title="card9"] {
+    margin: 0px 0px 94px 0px;
+}
+
+/* Футер */
+.footer {
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2097px;
+
+    background: #2F303A;
+}
+
+.w-footer {
+    font-family: 'Raleway';
+    padding: 60px 0px 20px 215px;
+
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: #2196F3;
+}
+
+.s-footer {
+    font-family: 'Raleway';
+    padding: 60px 1240px 20px 215px;
+
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.place {
+    padding: 0px 1154px 9px 215px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0, 03em;
+
+    color: #FFFFFF;
+}
+
+.e-mail-footer {
+
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    padding: 0px 1154px 9px 215px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.tel-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7px;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0px 1154px 60px 215px;
+}
+
+
+.list-footer {
+    list-style: none;
+}
+
+.list-about {
+    list-style: none;
+    display: flex;
+}
+

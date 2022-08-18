@@ -3,6 +3,8 @@ body {
     font-weight: 700;
 
 }
+
+/* Хедер */
 .header {
     display: flex;
 }
@@ -82,6 +84,7 @@ a[href="tel:+380961111111"] {
     margin: 32px 151px 32px 0px;
 }
 
+/* Мейн */
 .main-section {
     background-color: #2F303A;
     width: 1600px;
@@ -90,31 +93,29 @@ a[href="tel:+380961111111"] {
         top: 80px;
 }
 .title {
-    width: 696px;
-        height: 120px;
-        left: 452px;
-        top: 280px;
     
+        
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 900;
         font-size: 44px;
         line-height: 60px;
-       
-    
+        padding: 200px 452px 0px 452px;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-    
+        width: 1600px;
+            
+            
         color: #FFFFFF;
 }
 
 .btn {
-    width: 152px;
-        height: 30px;
-        left: 724px;
-        top: 440px;
-/* padding: 30px 700px 200px 700px; */
+    width: 200px;
+        height: 50px;
+        left: 700px;
+        top: 430px;
+    margin: 30px 700px 200px 700px;
 padding: 10px 24px;
     font-size: 16px;
     line-height: 1.9;
