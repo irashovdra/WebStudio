@@ -41,20 +41,6 @@ nav {
 }
 
 
-.main-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-.item {
-    width: 370px;
-        height: 404px;
-        left: 215px;
-        top: 262px;
-        background: #FFFFFF;
-            border: 1px solid #EEEEEE;
-}
 
 .list-links {
     list-style: none;
@@ -121,134 +107,62 @@ a[href="tel:+380961111111"] {
 .buttons-list {
     list-style: none;
     display: flex;
+    margin-left: 495px;
 }
 
-.btn1 {
-    background-color: #F5F4FA;
-    margin: 94px 8px 50px 495px;
-    width: 73px;
-        height: 38px;
-        left: 495px;
-        top: 174px;
-        background: #2196F3;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            letter-spacing: 0.03em;
-        
-            color: #FFFFFF;
+.btn {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
 }
-.btn2 {
-    background-color: #F5F4FA;
-    margin: 94px 8px 50px 0px;
-    width: 128px;
-        height: 38px;
-        left: 576px;
-        top: 174px;
-        border-radius: 4px;
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: #212121;
-}
-.btn3 {
-    background-color: #F5F4FA;
-    margin: 94px 8px 50px 0px;
-    width: 145px;
-        height: 38px;
-        left: 712px;
-        top: 174px;
-        border-radius: 4px;
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: #212121;
-}
-.btn4 {
-    background-color: #F5F4FA;
-    margin: 94px 8px 50px 0px;
-    width: 103px;
-        height: 38px;
-        left: 865px;
-        top: 174px;
-        border-radius: 4px;
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: #212121;
-}
-.btn5 {
-    background-color: #F5F4FA;
-    margin: 94px 494px 50px 0px;
-    width: 130px;
-        height: 38px;
-        left: 976px;
-        top: 174px;
-        border-radius: 4px;
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: #212121;
-}
-
-.btn2:hover {
+.btn:hover {
     background: #2196F3;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         border-radius: 4px;
         font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: #FFFFFF;
-}
-.btn3:hover {
-background: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    font-weight: 500;
         font-size: 16px;
         line-height: 26px;
         text-align: center;
         letter-spacing: 0.03em;
         color: #FFFFFF;
 }
-.btn4:hover {
-    background: #2196F3;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: #FFFFFF;
+
+.btn-item {
+        margin-right: 8px;
 }
-.btn5:hover {
-    background: #2196F3;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: #FFFFFF;
+.btn-item:last-child {
+    margin-right: 0;
 }
 
 /* Карточки */
-li[title="card1"] {
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 215px;
+}
+
+.card-item {
+    width: 370px;
+    height: 404px;
+    left: 215px;
+    top: 262px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.card-item:nth-child(3n) {
+    margin-right: 0;
+}
+.card-item:last-child {
+    margin-bottom: 0;
+}
+
+/* li[title="card1"] {
     margin: 0px 30px 30px 215px;
 }
 li[title="card2"] {
@@ -274,7 +188,7 @@ li[title="card8"] {
 }
 li[title="card9"] {
     margin: 0px 0px 94px 0px;
-}
+} */
 
 .title {
     width: 322px;
@@ -319,9 +233,9 @@ li[title="card9"] {
     background: #2F303A;
 }
 
-.w-footer {
+.logo-footer {
     font-family: 'Raleway';
-    padding: 60px 0px 20px 215px;
+    padding: 60px 1240px 20px 215px;
 
     font-size: 26px;
     line-height: 1.2;
@@ -330,14 +244,11 @@ li[title="card9"] {
     color: #2196F3;
 }
 
-.s-footer {
+.logo-word {
     font-family: 'Raleway';
-    padding: 60px 1240px 20px 215px;
-
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-
     color: #FFFFFF;
 }
 
