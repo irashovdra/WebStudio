@@ -13,31 +13,27 @@
     <link rel="stylesheet" href="./styles/portfolio.css">
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <!-- Шапка -->
-            
-    
-                <a href="/" class="main-page"><span class="web">Web</span>Studio</a>
-    
-                <ul class="list-links">
-                    <li><a href="./index.html" class="links">Студія</a></li>
-                    <li><a href="./portfolio.html" class="links">Портфоліо</a></li>
-                    <li><a href="/contacts" class="links">Контакти</a></li>
-                </ul>
-    
-    
-                <ul class="list-contacts">
-                    <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
-                </ul>
-    
-           
-        </nav>
+    <header>
+        <div class="container">
+   <nav >
+        <a href="/" class="main-page"><span class="web">Web</span>Studio</a>
+        
+            <ul class="list-links">
+                <li class="header-item"><a class="header-link" href="./index.html">Студія</a></li>
+                <li class="header-item"><a class="header-link" href="./portfolio.html">Портфоліо</a></li>
+                <li class="header-item"><a class="header-link" href="/contacts">Контакти</a></li>
+            </ul>
+            <ul class="list-contacts">
+                <li  class="header-contacts"><a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li  class="header-contacts"><a class="header-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+    </nav>
+    </div>
     </header>
     <main>
         <!-- Кнопки -->
         <section>
+            <div class="container">
         <ul class="buttons-list">
             <li class="btn-item"><button class="btn">Усе</button></li>
             <li class="btn-item"><button class="btn">Веб-сайти</button></li>
@@ -45,9 +41,11 @@
             <li class="btn-item"><button class="btn">Дизайн</button></li>
             <li class="btn-item"><button class="btn">Маркетинг</button></li>
         </ul>
+            </div>
         </section>
         <!-- Карточки -->
         <section>
+            <div class="container">
         <ul class="card-list">
             <li class="card-item">
                 <img src="./images(portfolio)/img1.png" alt="photo">
@@ -95,16 +93,17 @@
                 <p class="paragraph">Застосунок</p>
             </li>
         </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <h2 class="logo-footer"><span class="logo-word">Web</span>Studio</h2>
         <address class="place">м. Київ, пр-т Лесі Українки, 26</address>
-    
-        <ul class="list-footer">
-            <li class="e-mail-footer">info@example.com</li>
-            <li class="tel-footer">tel:099 111 11 11</li>
-        </ul>
-    </footer>
+        
+            <ul class="list-footer">
+                <li class="email-footer">info@example.com</li>
+                <li class="tel-footer">tel:099 111 11 11</li>
+                </ul>
+                </footer>
 </body>
 </html>

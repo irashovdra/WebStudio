@@ -18,21 +18,21 @@
     <!-- Шапка -->
 
     <header>
+        <div class="container">
    <nav >
         <a href="/" class="main-page"><span class="web">Web</span>Studio</a>
         
             <ul class="list-links">
-                <li><a href="./index.html" class="links">Студія</a></li>
-                <li><a href="./portfolio.html" class="links">Портфоліо</a></li>
-                <li><a href="/contacts" class="links">Контакти</a></li>
+                <li class="header-item"><a class="header-link" href="./index.html">Студія</a></li>
+                <li class="header-item"><a class="header-link" href="./portfolio.html">Портфоліо</a></li>
+                <li class="header-item"><a class="header-link" href="/contacts">Контакти</a></li>
             </ul>
-        
-        
             <ul class="list-contacts">
-                <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
+                <li  class="header-contacts"><a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li  class="header-contacts"><a class="header-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
     </nav>
+    </div>
     </header>
     <main>
         <!-- Секція-герой -->
@@ -47,7 +47,7 @@
         </section>
         <!-- Чому ми? -->
         <section class="about-section">
-       
+        <div class="container">
         <ul class="list-about">
             <li class="about-item"><h3 class="about-name">УВАГА ДО ДЕТАЛЕЙ</h3><p class="about-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit
                 magnam iure.</p></li>
@@ -58,10 +58,12 @@
             <li class="about-item"><h3 class="about-name">СУЧАСНІ ТЕхнології</h3><p class="about-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit
                 magnam iure.</p></li>
         </ul>
+        </div>
         
         </section>
         <!-- Чим ми займаємося? -->
-        <section>
+        <section class="work-section">
+            <div class="container">
             <h2 class="work-title">
                 Чим ми займаємося
             </h2>
@@ -76,29 +78,37 @@
                     <img src="./images(studio)/photo3.png" alt="photo3">
                 </li class="work-item">
             </ul>
-        
+             </div>
         </section>
         <!-- Наша команда -->
         <section class="our-team-section">
-           
-            <h2 class="our-team">
+            <div class="container">
+            <h2 class="our-team-title">
                 Наша команда
             </h2>
             <ul class="team">
                 <li class="team-item">
-                    <img src="./images(studio)/team1.png" alt="team1">
+                    <img class="team-photo" src="./images(studio)/img1.jpg" alt="team1">
+                    <h3 class="team-card-title">Ігор Дем'яненко</h3>
+                    <p class="team-card-paragraph">Product Designer</p>
                  </li>
                  <li class="team-item">
-                    <img src="./images(studio)/team2.png" alt="team2">
+                    <img class="team-photo" src="./images(studio)/img2.jpg" alt="team2">
+                    <h3 class="team-card-title">Ольга Репіна</h3>
+                    <p class="team-card-paragraph">Frontend Developer</p>
                 </li>
                 <li class="team-item">
-                    <img src="./images(studio)/team3.png" alt="team3">
+                    <img class="team-photo" src="./images(studio)/img3.jpg" alt="team3">
+                    <h3 class="team-card-title">Микола Тарасов</h3>
+                    <p class="team-card-paragraph">Marketing</p>
                 </li>
                 <li class="team-item">
-                    <img src="./images(studio)/team4.png" alt="team4">
+                    <img class="team-photo" src="./images(studio)/img4.jpg" alt="team4">
+                    <h3 class="team-card-title">Михайло Єрмаков</h3>
+                    <p class="team-card-paragraph">Ul Designer</p>
                 </li>
             </ul>
-            
+            </div>
          </section>
     </main>
     <footer class="footer">

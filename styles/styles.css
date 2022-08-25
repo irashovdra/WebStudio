@@ -4,7 +4,26 @@ body {
 }
 ul {
     padding: 0;
+    margin: 0;
     
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -12,13 +31,14 @@ ul {
 nav {
     display: flex;
     align-items: center;
+    height: 80px;
 }
 
 .main-page {
     color: #000000;
     font-family: 'Raleway';
-    margin: 24px 93px 25px 215px;
-    
+    /* margin: 24px 93px 25px 215px; */
+    margin-right: 93px;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -27,8 +47,6 @@ nav {
 .web {
     color: #2196F3;
     font-family: 'Raleway';
-   
-
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -39,9 +57,9 @@ nav {
     display: flex;
 }
 
-.links {
+.header-item {
     color: #212121;
-   
+    margin-right: 54px;
     
     font-weight: 500;
     font-size: 14px;
@@ -49,47 +67,43 @@ nav {
     letter-spacing: 0.02em;
     
 }
+.header-item:last-child {
+    margin-right: 0;
+}
 
-.links:hover {
+.header-link:hover {
     color: #2196F3;
 }
 
-a[href="./index.html"] {
-    margin: 32px 55px 32px 0px;
-}
-a[href="./portfolio.html"] {
-    margin: 32px 55px 32px 0px;
-}
-a[href="/contacts"] {
-    margin: 32px 335px 32px 0px;
+.header-link {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
 }
 
 .list-contacts {
     list-style: none;
     display: flex;
+    margin-left: auto;
 }
 
-.contacts {
-    color: #212121;
-   
-    
+.header-contacts {
+    margin-right: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
 }
+.header-contacts:last-child {
+    margin-right: 0;
+}
 
-.contacts:hover {
+.header-contacts:hover {
     color: #2196F3;
 }
 
-a[href="mailto:info@devstudio.com"] {
-    margin: 32px 50px 32px 0px;
-}
-
-a[href="tel:+380961111111"] {
-    margin: 32px 151px 0px 0px;
-}
 
 /* Мейн */
 
@@ -97,13 +111,11 @@ a[href="tel:+380961111111"] {
 /* Секція-герой */
 .hero-section {
     background-color: #2F303A;
-    width: 1600px;
-        height: 600px;
-    padding-top: 200px;
-    
-        
-        
+    height: 600px;
+    padding-top: 200px;     
 }
+
+
 .hero-title {
         font-family: 'Roboto';
         font-style: normal;
@@ -115,6 +127,7 @@ a[href="tel:+380961111111"] {
         text-transform: uppercase;
         color: #FFFFFF;
 }
+
 
 .hero-btn {
     font-size: 16px;
@@ -128,7 +141,7 @@ a[href="tel:+380961111111"] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
+    margin-top: 30px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -137,12 +150,13 @@ a[href="tel:+380961111111"] {
 
 /* Секція-чому ми */
 .about-section {
-    padding: 94px 215px;
+    /* padding: 94px 215px; */
 }
 .list-about {
     list-style: none;
     display: flex;
-    
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .about-item {
@@ -180,26 +194,29 @@ a[href="tel:+380961111111"] {
 
 
 /* Чим ми займаємося */
-.work-title {
 
-    margin: 0px 617px 50px 617px;
+.work-section {
+    padding-bottom: 94px;
+}
+.work-title {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-
+    margin-bottom: 50px;
     color: #212121;
 }
 
 .work-list {
     list-style: none;
     display: flex;
-    margin-left: 215px;
-    margin-bottom: 94px;
+     
+    
 }
 
 .work-item {
     margin-right: 30px;
+
 }
 .work-item:last-child {
     margin-right: 0;
@@ -209,52 +226,78 @@ a[href="tel:+380961111111"] {
 /* Наша команда */
 .our-team-section {
     background-color: #F5F4FA;
-    width: 1600px;
-        height: 648px;
+     padding-top: 94px;
+     padding-bottom: 94px;
+    
 }
 
 .team {
     list-style: none;
     display: flex;
-    margin-left: 215px;
 }
 
-.our-team {
-    padding: 94px 668px 50px 668px;
-    
+.our-team-title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-
     color: #212121;
 }
 
 .team-item {
     margin-right: 30px;
+    background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+width: 270px; 
 }
 .team-item:last-child {
     margin-right: 0;
 }
 
+.team-photo {
+    display: block;
+    width: 270px;
+}
+
+.team-card-title {
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+padding-top: 34px;
+padding-bottom: 18px;
+}
+
+.team-card-paragraph {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.2px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+padding-bottom: 34px;
+}
+
 
 /* Футер */
 .footer {
-    width: 1600px;
     height: 252px;
-    left: 0px;
-    top: 2097px;
-
     background: #2F303A;
 }
 
 .logo-footer {
     font-family: 'Raleway';
-    padding: 60px 1240px 20px 215px;
+    padding-top: 60px;
+    padding-left: 215px;
+    padding-bottom: 30px;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: #2196F3;
+       color: #FFFFFF;
 }
 
 .logo-word {
@@ -262,11 +305,12 @@ a[href="tel:+380961111111"] {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: #2196F3;
 }
 
 .place {
-    padding: 0px 1154px 9px 215px;
+    padding-left: 215px;
+    padding-bottom: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -279,7 +323,8 @@ a[href="tel:+380961111111"] {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    padding: 0px 1154px 9px 215px;
+    padding-left: 215px;
+    padding-bottom: 20px;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -287,11 +332,9 @@ a[href="tel:+380961111111"] {
     font-weight: 400;
         font-size: 14px;
         line-height: 1.7px;
-        
+        padding-left: 215px;
         letter-spacing: 0.03em;
-    
         color: rgba(255, 255, 255, 0.6);
-        padding: 0px 1154px 60px 215px;
     }
         
 
