@@ -114,7 +114,7 @@ nav {
 .buttons-list {
     list-style: none;
     display: flex;
-    margin-left: 495px;
+    justify-content: center;
 }
 
 .btn {
@@ -125,6 +125,7 @@ nav {
         letter-spacing: 0.03em;
         color: #212121;
         margin-top: 94px;
+        border: none;
 }
 .btn:hover {
     background: #2196F3;
