@@ -17,6 +17,10 @@ h1, h2, h3 {
     padding: 0;
 }
 
+button {
+    border: none;
+}
+
 
 .container {
     width: 1200px;
@@ -106,11 +110,17 @@ nav {
 
 
 /* Мейн */
-
+  
 
 /* Секція-герой */
 .hero-section {
-    background-color: #2F303A;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images\(studio\)/background.png);
+    background-repeat: no-repeat;
     height: 600px;
     padding-top: 200px;     
 }
@@ -149,9 +159,7 @@ nav {
 
 
 /* Секція-чому ми */
-.about-section {
-    /* padding: 94px 215px; */
-}
+
 .list-about {
     list-style: none;
     display: flex;
@@ -167,6 +175,37 @@ nav {
 
 .about-item:last-child {
     margin-right: 0;
+}
+
+.about-item:nth-child(1)::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+    background-image: url(./abouticon1.png);
+}
+
+.about-item:nth-child(2)::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+    background-image: url(./abouticon2.png);
+}
+
+.about-item:nth-child(3)::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+    background-image: url(./abouticon3.png);
+}
+
+.about-item:nth-child(4)::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(./abouticon4.png);
 }
 
 .about-name {
