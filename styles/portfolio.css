@@ -30,6 +30,7 @@ h1, h2, h3 {
 .header {
     height: 80px;
 background: #FFFFFF;
+border-bottom: 1px solid #ECECEC;
 }
 
 nav {
@@ -126,6 +127,8 @@ nav {
         color: #212121;
         margin-top: 94px;
         border: none;
+        background: #F5F4FA;
+        padding: 6px 22px 6px 22px;
 }
 .btn:hover {
     background: #2196F3;

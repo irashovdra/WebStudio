@@ -64,40 +64,66 @@
           еФЕКтивні рішення для <br />
           вашого бізнесу
         </h1>
-        <button type="button" class="hero-btn">Замовити послугу</button>
+        <button data-open-modal type="button" class="hero-btn">Замовити послугу</button>
+        <div data-backdrop class="backdrop is-hidden">
         <div class="modal">
-          <svg class="modal-dagger" width="18" height="18">
+          <button data-close-modal type="button">
+            <svg class="modal-dagger" width="18" height="18">
             <use href="./images(studio)/symbol-defs.svg#close"></use>
           </svg>
+          </button>
           <h3 class="modal-title">Залиште свої дані, ми Вам зателефонуємо</h3>
           <ul>
-            <li class="modal-item">
+            <li class="modal-item" width="448" height="40">
               <label class="modal-filling">
                 Ім'я <br>
-                <input class="modal-inputs" type="text" />
+                <div class="modal-inputs">
+               
+                <input class="modal-fitting" type="text" />
+               
+                <svg class="modal-icon" width="12" height="12">
+                  <use href="./images(studio)/symbol-defs.svg#person"></use>
+                </svg>
+                </div>
               </label>
             </li>
             <li class="modal-item">
               <label class="modal-filling">
                 Телефон <br>
-                <input class="modal-inputs" type="text" />
+                <div class="modal-inputs">
+                <input type="text" />
+                <svg class="modal-icon" width="12" height="12">
+                  <use href="./images(studio)/symbol-defs.svg#phone-black"></use>
+                </svg>
+                </div>
               </label>
             </li>
             <li class="modal-item">
               <label class="modal-filling">
                 Пошта <br>
-                <input class="modal-inputs" type="text" />
+                <div class="modal-inputs">
+                <input  type="text" />
+                <svg class="modal-icon" width="12" height="12">
+                  <use href="./images(studio)/symbol-defs.svg#email-black"></use>
+                </svg>
+                </div>
               </label>
             </li>
             <li class="modal-item">
               <label class="modal-filling">
                 Коментарі <br>
-                <input class="modal-comments" type="text" />
+                <textarea class="modal-comments" type="text" placeholder="Введіть текст"></textarea>
               </label>
             </li>
           </ul>
+          <button type="button">
+            <svg  width="15" height="15">
+              <use href="./images(studio)/symbol-defs.svg#confirming"></use>
+            </svg>
+          </button>
           <p class="agreement-paragraph">Погоджуюсь з розсилкою і приймаю <a class="agreement-link">Умови договору</a></p>
-          <button type="button" class="modal-button">Надіслати</button>
+          <button data-close-modal type="submit" class="modal-button">Надіслати</button>
+        </div>
         </div>
       </section>
       <!-- Чому ми? -->
@@ -141,14 +167,20 @@
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-item">
-              <img src="./images(studio)/photo1.jpg" alt="photo1" />
-              <h3>ДЕСКТОПНІ ЗАСТОСУНКИ</h3>
+              <div class="work-li-hover">
+              <img class="work-photo1" src="./images(studio)/photo1.jpg" alt="photo1" />
+              <div class="work-hover">
+              <h3 class="work-inscription">ДЕСКТОПНІ ЗАСТОСУНКИ</h3>
+              </div>
+              </div>
             </li>
             <li class="work-item">
-              <img src="./images(studio)/photo2.jpg" alt="photo2" />
+              <img class="work-photo2" src="./images(studio)/photo2.jpg" alt="photo2" />
+              <h3 class="work-inscription">МОБІЛЬНІ ЗАСТОСУНКИ</h3>
             </li>
             <li class="work-item">
-              <img src="./images(studio)/photo3.jpg" alt="photo3" />
+              <img class="work-photo3" src="./images(studio)/photo3.jpg" alt="photo3" />
+              <h3 class="work-inscription">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
             </li>
           </ul>
         </div>
@@ -162,8 +194,7 @@
               <img
                 class="team-photo"
                 src="./images(studio)/team1.jpg"
-                alt="team1"
-              />
+                alt="team1"/>
               <h3 class="team-card-title">Ігор Дем'яненко</h3>
               <p class="team-card-paragraph">Product Designer</p>
               <ul class="social-list">
@@ -458,5 +489,25 @@
         </ul>
       </section>
     </footer>
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        console.log("Це клік в бекдроп");
+      }
+    </script>
   </body>
 </html>
