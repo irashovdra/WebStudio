@@ -13,23 +13,44 @@
     <link rel="stylesheet" href="./styles/portfolio.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-   <nav >
-        <a href="/" class="main-page"><span class="web">Web</span>Studio</a>
-        
-            <ul class="list-links">
-                <li class="header-item"><a class="header-link" href="./index.html">Студія</a></li>
-                <li class="header-item"><a class="header-link" href="./portfolio.html">Портфоліо</a></li>
-                <li class="header-item"><a class="header-link" href="/contacts">Контакти</a></li>
-            </ul>
-            <ul class="list-contacts">
-                <li  class="header-contacts"><a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li  class="header-contacts"><a class="header-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-    </nav>
-    </div>
+   <header>
+      <div class="container">
+        <nav>
+          <a href="/" class="main-page"><span class="web">Web</span>Studio</a>
+
+          <ul class="list-links">
+            <li class="header-item">
+              <a class="header-link" href="./index.html">Студія</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="/contacts">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list-contacts">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com"
+                ><svg class="contacts-svg" width="16" height="12">
+                  <use href="./images(studio)/symbol-defs.svg#email"></use>
+                </svg>
+                <span class="contacts-text">info@devstudio.com</span></a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+380961111111">
+                <svg class="contacts-svg" width="10" height="16">
+                  <use href="./images(studio)/symbol-defs.svg#smartphone"></use>
+                </svg>
+                <span class="contacts-text">+38 096 111 11 11</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <!-- Мейн -->
     <main>
         <!-- Кнопки -->
         <section>
@@ -49,8 +70,14 @@
         <ul class="card-list">
             <li class="card-item">
                 <img src="./images(portfolio)/img1.jpg" alt="photo">
+                <div class="card-overlay">
+                    <p class="overlay-paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
+Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
+                </div>
+                <div class="card-description">
                 <h2 class="title">Технокряк</h2>
                 <p class="paragraph">Веб-сайт</p>
+                </div>
             </li>
             <li class="card-item">
                 <img src="./images(portfolio)/img2.jpg" alt="photo">
@@ -97,13 +124,48 @@
         </section>
     </main>
     <footer class="footer">
+      <section>
         <h2 class="logo-footer"><span class="logo-word">Web</span>Studio</h2>
         <address class="place">м. Київ, пр-т Лесі Українки, 26</address>
-        
-            <ul class="list-footer">
-                <li class="email-footer">info@example.com</li>
-                <li class="tel-footer">tel:099 111 11 11</li>
-                </ul>
-                </footer>
-</body>
+
+        <ul class="list-footer">
+          <li class="email-footer">info@example.com</li>
+          <li class="tel-footer">tel:099 111 11 11</li>
+        </ul>
+      </section>
+      <section class="join-section">
+        <h3 class="join-title">Приєднуйтесь</h3>
+        <ul class="join-list">
+          <li class="join-item">
+            <a class="join-icon">
+              <svg class="footer-svg-item" width="20" height="20">
+                <use href="./images(studio)/symbol-defs.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="join-item">
+            <a class="join-icon">
+              <svg class="footer-svg-item" width="20" height="20">
+                <use href="./images(studio)/symbol-defs.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="join-item">
+            <a class="join-icon">
+              <svg class="footer-svg-item" width="20" height="20">
+                <use href="./images(studio)/symbol-defs.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="join-item">
+            <a class="join-icon">
+              <svg class="footer-svg-item" width="20" height="20">
+                <use href="./images(studio)/symbol-defs.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
 </html>

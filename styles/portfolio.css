@@ -5,7 +5,7 @@ body {
 ul {
     padding: 0;
     margin: 0;
-    
+    list-style: none;
 }
 
 a {
@@ -17,6 +17,9 @@ h1, h2, h3 {
     padding: 0;
 }
 
+p {
+    margin: 0;
+}
 
 .container {
     width: 1200px;
@@ -62,16 +65,17 @@ nav {
     display: flex;
 }
 
-.header-item {
+.header-link {
     color: #212121;
-    margin-right: 54px;
-    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    
+    margin-right: 54px;
+    transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
 }
+
+
 .header-item:last-child {
     margin-right: 0;
 }
@@ -80,33 +84,39 @@ nav {
     color: #2196F3;
 }
 
-.header-link {
-    color: #212121;
+.contacts-item {
+    margin-right: 50px;
+       transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+
+.contacts-item:last-child {
+    margin-right: 0;
+}
+
+.contacts-svg {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contacts-link {
+    display: flex;
+        align-items: center;
+     color: #757575;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
 }
 
+.contacts-link:hover {
+     color: #2196F3;
+     fill: #2196F3;
+}
 .list-contacts {
     list-style: none;
     display: flex;
     margin-left: auto;
-}
-
-.header-contacts {
-    margin-right: 50px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-}
-.header-contacts:last-child {
-    margin-right: 0;
-}
-
-.header-contacts:hover {
-    color: #2196F3;
 }
 
 /* Мейн */
@@ -129,17 +139,12 @@ nav {
         border: none;
         background: #F5F4FA;
         padding: 6px 22px 6px 22px;
+        transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+        border-radius: 4px;
 }
 .btn:hover {
-    background: #2196F3;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
+    background-color: #2196F3;
+    color: #FFFFFF;
 }
 
 .btn-item {
@@ -161,12 +166,13 @@ nav {
 .card-item {
     width: 370px;
     height: 404px;
-    left: 215px;
-    top: 262px;
+    /* left: 215px;
+    top: 262px; */
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     margin-right: 30px;
     margin-bottom: 30px;
+    position: relative;
 }
 .card-item:nth-child(3n) {
     margin-right: 0;
@@ -175,6 +181,40 @@ nav {
     margin-bottom: 0;
 }
 
+.overlay-paragraph {
+    font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+text-align: center;
+justify-content: center;
+}
+
+.card-overlay {
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms , opacity 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
+}
+
+.card-overlay:hover {
+    opacity: 1;
+}
+
+.card-item:hover .card-overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card-description {
+    text-align: center;
+}
 
 .title {
     width: 322px;
@@ -186,6 +226,7 @@ nav {
         line-height: 2;
         letter-spacing: 0.06em;
         color: #212121;
+        margin-bottom: 4px;
 }
 
 .paragraph {
@@ -206,6 +247,7 @@ nav {
 .footer {
     height: 252px;
     background: #2F303A;
+    display: flex;
 }
 
 .logo-footer {
@@ -235,6 +277,7 @@ nav {
     line-height: 1.7;
     letter-spacing: 0,03em;
     color: #FFFFFF;
+    font-style: normal;
 }
 
 .email-footer {
@@ -243,8 +286,8 @@ nav {
     line-height: 1.7;
     letter-spacing: 0.03em;
     padding-left: 215px;
-    padding-bottom: 20px;
     color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 20px;
 }
 
 .tel-footer {
@@ -255,8 +298,48 @@ nav {
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
     }
-        
 
-.list-footer {
-    list-style: none;
+        
+.join-list {
+    display: flex;
 }
+
+.join-section {
+    padding-top: 72px;
+    padding-left: 70px;
+}
+
+.join-title {
+    font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+.join-item {
+    margin-right: 10px;
+}
+
+.join-item:last-child {
+    margin-right: 0;
+}
+
+.join-icon {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    fill: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, fill 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, border-radius 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+
+.join-icon:hover {
+    fill: #FFFFFF;
+    background-color: #2196F3;
+    border-radius: 100%;
+}
+
