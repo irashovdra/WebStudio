@@ -60,6 +60,13 @@ nav {
     letter-spacing: 0.03em;
 }
 
+.active-page {
+    border-bottom: 4px solid #2196F3;
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
 .list-links {
     list-style: none;
     display: flex;
@@ -189,6 +196,7 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 text-align: center;
 justify-content: center;
+padding-top: 118px;
 }
 
 .card-overlay {

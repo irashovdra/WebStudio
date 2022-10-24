@@ -10,6 +10,7 @@ body {
     font-family: 'Roboto';
     font-weight: 700;
 }
+
 ul {
     padding: 0;
     margin: 0;
@@ -42,7 +43,6 @@ input {
 
 /* Хедер */
 
-
 nav {
     display: flex;
     align-items: center;
@@ -52,7 +52,6 @@ nav {
 .main-page {
     color: #000000;
     font-family: 'Raleway';
-    /* margin: 24px 93px 25px 215px; */
     margin-right: 93px;
     font-size: 26px;
     line-height: 1.2;
@@ -65,6 +64,13 @@ nav {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+}
+
+.active-page {
+    border-bottom: 4px solid #2196F3;
+    display: block;
+    width: 100%;
+    padding-bottom: 60px;
 }
 
 .list-links {
@@ -81,7 +87,6 @@ nav {
     margin-right: 54px;
     transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
 }
-
 
 .header-item:last-child {
     margin-right: 0;
@@ -659,17 +664,17 @@ margin-bottom: 50px;
     height: 252px;
     background: #2F303A;
     display: flex;
+    padding-left: 215px;
+    padding-top: 60px;
 }
 
 .logo-footer {
     font-family: 'Raleway';
-    padding-top: 60px;
-    padding-left: 215px;
-    padding-bottom: 30px;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
        color: #FFFFFF;
+       margin-bottom: 20px;
 }
 
 .logo-word {
@@ -681,14 +686,14 @@ margin-bottom: 50px;
 }
 
 .place {
-    padding-left: 215px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0,03em;
     color: #FFFFFF;
     font-style: normal;
+    margin-bottom: 10px;
 }
 
 .email-footer {
@@ -696,19 +701,17 @@ margin-bottom: 50px;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    padding-left: 215px;
     color: rgba(255, 255, 255, 0.6);
-    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .tel-footer {
     font-weight: 400;
         font-size: 14px;
         line-height: 1.7px;
-        padding-left: 215px;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
-    }
+}
 
         
 .join-list {
@@ -716,8 +719,7 @@ margin-bottom: 50px;
 }
 
 .join-section {
-    padding-top: 72px;
-    padding-left: 70px;
+margin-left: 70px;
 }
 
 .join-title {
@@ -753,4 +755,51 @@ margin-bottom: 20px;
     background-color: #2196F3;
     border-radius: 100%;
 }
+
+.subscribing-section {
+    margin-left: 50px;
+}
+
+.subscribing-title {
+    font-size: 14px;
+line-height: 1.1;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+.subscribing-input {
+    width: 358px;
+    height: 50px;
+    background-color: #2F303A;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding-top: 15px;
+padding-left: 15px;
+margin-right: 12px;
+}
+
+.subscribing-content {
+ display: flex;
+}
+
+.subscribing-btn {
+    width: 200px;
+height: 50px;
+    background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding: 10px 30px 10px 30px;
+font-size: 14px;
+line-height: 1.1;
+text-align: center;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+margin-bottom: 20px;
+margin-right: 10px;
+}
+
+
 
