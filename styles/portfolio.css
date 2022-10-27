@@ -35,44 +35,34 @@ p {
 background: #FFFFFF;
 border-bottom: 1px solid #ECECEC;
 }
-
+ 
 nav {
     display: flex;
     align-items: center;
     height: 80px;
 }
 
-.main-page {
+.logo {
     color: #000000;
     font-family: 'Raleway';
-    /* margin: 24px 93px 25px 215px; */
-    margin-right: 93px;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
 
-.web {
+.logo--header {
     color: #2196F3;
-    font-family: 'Raleway';
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
 }
 
-.active-page {
-    border-bottom: 4px solid #2196F3;
-    display: block;
-    width: 100%;
-    padding-bottom: 20px;
-}
-
-.list-links {
+/* Список посилань */
+ 
+.links-list {
     list-style: none;
     display: flex;
+    margin-left: 93px;
 }
 
-.header-link {
+.links-list__link {
     color: #212121;
     font-weight: 500;
     font-size: 14px;
@@ -82,30 +72,39 @@ nav {
     transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
 }
 
-
-.header-item:last-child {
+.links-list__item:last-child {
     margin-right: 0;
 }
 
-.header-link:hover {
+.links-list__link:hover {
     color: #2196F3;
 }
 
-.contacts-item {
+.links-link--active-page {
+    border-bottom: 4px solid #2196F3;
+    display: block;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+/* Список контактів */
+
+.contacts-list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-list__item {
     margin-right: 50px;
        transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
 }
 
-.contacts-item:last-child {
+.contacts-list__item:last-child {
     margin-right: 0;
 }
 
-.contacts-svg {
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-.contacts-link {
+.contacts-list__link {
     display: flex;
         align-items: center;
      color: #757575;
@@ -116,26 +115,34 @@ nav {
     transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
 }
 
-.contacts-link:hover {
+.contacts-list__link:hover {
      color: #2196F3;
      fill: #2196F3;
 }
-.list-contacts {
-    list-style: none;
-    display: flex;
-    margin-left: auto;
+
+.contacts-list__icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 /* Мейн */
 
 /* Кнопки */
-.buttons-list {
+.btn-list {
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-.btn {
+.btn-list__item {
+        margin-right: 8px;
+}
+
+.btn-list__item:last-child {
+    margin-right: 0;
+}
+
+.btn-list__button {
     font-weight: 500;
         font-size: 16px;
         line-height: 1.6;
@@ -149,17 +156,11 @@ nav {
         transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
         border-radius: 4px;
 }
-.btn:hover {
+.btn-list__button:hover {
     background-color: #2196F3;
     color: #FFFFFF;
 }
 
-.btn-item {
-        margin-right: 8px;
-}
-.btn-item:last-child {
-    margin-right: 0;
-}
 
 /* Карточки */
 .card-list {
@@ -170,33 +171,27 @@ nav {
     margin-bottom: 94px;
 }
 
-.card-item {
+.card-list__item {
     width: 370px;
     height: 404px;
-    /* left: 215px;
-    top: 262px; */
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     margin-right: 30px;
     margin-bottom: 30px;
     position: relative;
 }
-.card-item:nth-child(3n) {
+
+.card-list__item:nth-child(3n) {
     margin-right: 0;
 }
-.card-item:nth-child(n+6) {
+
+.card-list__item:nth-child(n+6) {
     margin-bottom: 0;
 }
 
-.overlay-paragraph {
-    font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-letter-spacing: 0.03em;
-color: #FFFFFF;
-text-align: center;
-justify-content: center;
-padding-top: 118px;
+.card-list__item:hover .card-overlay {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .card-overlay {
@@ -215,16 +210,23 @@ padding-top: 118px;
     opacity: 1;
 }
 
-.card-item:hover .card-overlay {
-    opacity: 1;
-    transform: scale(1);
+.card-overlay__paragraph {
+    font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+text-align: center;
+justify-content: center;
+padding-top: 118px;
 }
 
 .card-description {
-    text-align: center;
+    padding-left: 24px;
+    padding-top: 20px;
 }
 
-.title {
+.card-description__title {
     width: 322px;
         height: 36px;
         left: 639px;
@@ -234,10 +236,10 @@ padding-top: 118px;
         line-height: 2;
         letter-spacing: 0.06em;
         color: #212121;
-        margin-bottom: 4px;
+        margin-bottom: 20px;
 }
 
-.paragraph {
+.card-description__paragraph {
     width: 322px;
         height: 30px;
         left: 639px;
@@ -252,72 +254,54 @@ padding-top: 118px;
 }
 
 /* Футер */
-.footer {
+footer {
     height: 252px;
     background: #2F303A;
     display: flex;
+    padding-left: 215px;
+    padding-top: 60px;
 }
 
-.logo-footer {
+.logo {
+    color: #2196F3;
+}
+
+.logo--footer {
     font-family: 'Raleway';
-    padding-top: 60px;
-    padding-left: 215px;
-    padding-bottom: 30px;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
        color: #FFFFFF;
-}
-
-.logo-word {
-    font-family: 'Raleway';
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: #2196F3;
+       margin-bottom: 20px;
 }
 
 .place {
-    padding-left: 215px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0,03em;
     color: #FFFFFF;
     font-style: normal;
+    margin-bottom: 10px;
 }
 
-.email-footer {
+.info-list__item {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    padding-left: 215px;
     color: rgba(255, 255, 255, 0.6);
-    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.tel-footer {
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7px;
-        padding-left: 215px;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-    }
-
-        
-.join-list {
-    display: flex;
-}
+/* Секція приєднуйтесь */
 
 .join-section {
-    padding-top: 72px;
-    padding-left: 70px;
+margin-left: 70px;
 }
 
-.join-title {
+.join-section__title {
     font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
@@ -325,16 +309,20 @@ text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 20px;
 }
+        
+.join-list {
+    display: flex;
+}
 
-.join-item {
+.join-list__item {
     margin-right: 10px;
 }
 
-.join-item:last-child {
+.join-list__item:last-child {
     margin-right: 0;
 }
 
-.join-icon {
+.join-list__link {
     display: flex;
     padding: 12px;
     align-items: center;
@@ -345,9 +333,56 @@ margin-bottom: 20px;
     transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, fill 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, border-radius 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
 }
 
-.join-icon:hover {
+.join-list__link:hover {
     fill: #FFFFFF;
     background-color: #2196F3;
     border-radius: 100%;
+}
+
+/* Секція підпису */
+
+.subscribing-section {
+    margin-left: 50px;
+}
+
+.subscribing-section__title {
+    font-size: 14px;
+line-height: 1.1;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+.subscribing-section__content {
+ display: flex;
+}
+
+.subscribing-section__input {
+    width: 358px;
+    height: 50px;
+    background-color: #2F303A;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding-top: 15px;
+padding-left: 15px;
+margin-right: 12px;
+}
+
+.subscribing-section__btn {
+    width: 200px;
+height: 50px;
+    background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding: 10px 30px 10px 30px;
+font-size: 14px;
+line-height: 1.1;
+text-align: center;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+margin-bottom: 20px;
+margin-right: 10px;
 }
 

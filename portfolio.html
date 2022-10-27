@@ -16,35 +16,34 @@
    <header>
       <div class="container">
         <nav>
-          <a href="/" class="main-page"><span class="web">Web</span>Studio</a>
+          <a href="/" class="logo logo--header">Web<span class="logo">Studio</span></a>
 
-          <ul class="list-links">
-            <li class="header-item">
-              <a class="header-link" href="./index.html">Студія</a>
+          <ul class="links-list">
+            <li class="links-list__item">
+              <a class="links-list__link links-link--active-page" href="./index.html">Студія</a>
             </li>
-            <li class="header-item">
-              <a class="header-link active-page" href="./portfolio.html">Портфоліо</a>
+            <li class="links-list__item">
+              <a class="links-list__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="header-item">
-              <a class="header-link" href="/contacts">Контакти</a>
+            <li class="links-list__item">
+              <a class="links-list__link" href="/contacts">Контакти</a>
             </li>
           </ul>
-          <ul class="list-contacts">
-            <li class="contacts-item">
-              <a class="contacts-link" href="mailto:info@devstudio.com"
-                ><svg class="contacts-svg" width="16" height="12">
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="mailto:info@devstudio.com"
+                ><svg class="contacts-list__icon" width="16" height="12">
                   <use href="./images(studio)/symbol-defs.svg#email"></use>
                 </svg>
-                <span class="contacts-text">info@devstudio.com</span></a
+                <span>info@devstudio.com</span></a
               >
             </li>
-            <li class="contacts-item">
-              <a class="contacts-link" href="tel:+380961111111">
-                <svg class="contacts-svg" width="10" height="16">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="tel:+380961111111">
+                <svg class="contacts-list__icon" width="10" height="16">
                   <use href="./images(studio)/symbol-defs.svg#smartphone"></use>
                 </svg>
-                <span class="contacts-text">+38 096 111 11 11</span></a
-              >
+                <span>+38 096 111 11 11</span></a>
             </li>
           </ul>
         </nav>
@@ -55,12 +54,12 @@
         <!-- Кнопки -->
         <section>
             <div class="container">
-        <ul class="buttons-list">
-            <li class="btn-item"><button class="btn">Усе</button></li>
-            <li class="btn-item"><button class="btn">Веб-сайти</button></li>
-            <li class="btn-item"><button class="btn">Застосунки</button></li>
-            <li class="btn-item"><button class="btn">Дизайн</button></li>
-            <li class="btn-item"><button class="btn">Маркетинг</button></li>
+        <ul class="btn-list">
+            <li class="btn-list__item"><button class="btn-list__button">Усе</button></li>
+            <li class="btn-list__item"><button class="btn-list__button">Веб-сайти</button></li>
+            <li class="btn-list__item"><button class="btn-list__button">Застосунки</button></li>
+            <li class="btn-list__item"><button class="btn-list__button">Дизайн</button></li>
+            <li class="btn-list__item"><button class="btn-list__button">Маркетинг</button></li>
         </ul>
             </div>
         </section>
@@ -68,21 +67,21 @@
         <section>
             <div class="container">
         <ul class="card-list">
-            <li class="card-item">
+            <li class="card-list__item">
                 <img src="./images(portfolio)/img1.jpg" alt="photo">
                 <div class="card-overlay">
-                    <p class="overlay-paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
+                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
 Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
                 </div>
                 <div class="card-description">
-                <h2 class="title">Технокряк</h2>
-                <p class="paragraph">Веб-сайт</p>
+                <h2 class="card-description__title">Технокряк</h2>
+                <p class="card-description__paragraph">Веб-сайт</p>
                 </div>
             </li>
-            <li class="card-item">
+            <li class="card-list__item">
                 <img src="./images(portfolio)/img2.jpg" alt="photo">
                 <div class="card-overlay">
-                    <p class="overlay-paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
+                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
 Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
                 </div>
                 <div class="card-description">
@@ -90,10 +89,10 @@
             <p class="paragraph">Дизайн</p>
                 </div>
             </li>
-            <li class="card-item">
+            <li class="card-list__item">
                 <img src="./images(portfolio)/img3.jpg" alt="photo">
                 <div class="card-overlay">
-                    <p class="overlay-paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
+                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
 Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
                 </div>
                 <div class="card-description">
@@ -101,10 +100,10 @@
             <p class="paragraph">Застосунок</p>
                 </div>
             </li>
-            <li class="card-item">
+            <li class="card-list__item">
                 <img src="./images(portfolio)/img4.jpg" alt="photo">
                 <div class="card-overlay">
-                    <p class="overlay-paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
+                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
 Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
                 </div>
                 <div class="card-description">
@@ -112,10 +111,10 @@
                 <p class="paragraph">Маркетинг</p>
                 </div>
             </li>
-            <li class="card-item">
+            <li class="card-list__item">
                 <img src="./images(portfolio)/img5.jpg" alt="photo">
                 <div class="card-overlay">
-                    <p class="overlay-paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
+                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
 Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
                 </div>
                 <div class="card-description">
@@ -124,10 +123,10 @@
             <p class="paragraph">Застосунок</p>
                 </div>
             </li>
-            <li class="card-item">
+            <li class="card-list__item">
                 <img src="./images(portfolio)/img6.jpg" alt="photo">
                 <div class="card-overlay">
-                    <p class="overlay-paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
+                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
 Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
                 </div>
                 <div class="card-description">
@@ -135,10 +134,10 @@
             <p class="paragraph">Веб-сайт</p>
                 </div>
             </li>
-            <li class="card-item">
+            <li class="card-list__item">
                 <img src="./images(portfolio)/img7.jpg" alt="photo">
                 <div class="card-overlay">
-                    <p class="overlay-paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
+                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
 Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
                 </div>
                 <div class="card-description">
@@ -146,10 +145,10 @@
             <p class="paragraph">Дизайн</p>
                 </div>
             </li>
-            <li class="card-item">
+            <li class="card-list__item">
                 <img src="./images(portfolio)/img8.jpg" alt="photo">
                 <div class="card-overlay">
-                    <p class="overlay-paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
+                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
 Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
                 </div>
                 <div class="card-description">
@@ -157,10 +156,10 @@
                 <p class="paragraph">Маркетинг</p>
                 </div>
             </li>
-            <li class="card-item">
+            <li class="card-list__item">
                 <img src="./images(portfolio)/img9.jpg" alt="photo">
                 <div class="card-overlay">
-                    <p class="overlay-paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
+                    <p class="card-overlay__paragraph">Технокрик це сучасний майданчик поширення коронавірусу. 
 Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.</p>
                 </div>
                 <div class="card-description">
@@ -172,48 +171,66 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-      <section>
-        <h2 class="logo-footer"><span class="logo-word">Web</span>Studio</h2>
+<footer>
+      <section class="info-section">
+        <h2 class="logo">Web<span class="logo logo--footer">Studio</span></h2>
         <address class="place">м. Київ, пр-т Лесі Українки, 26</address>
 
-        <ul class="list-footer">
-          <li class="email-footer">info@example.com</li>
-          <li class="tel-footer">tel:099 111 11 11</li>
+        <ul class="info-list">
+          <li class="info-list__item">info@example.com</li>
+          <li class="info-list__item">tel:099 111 11 11</li>
         </ul>
       </section>
+
+<!-- Секція приєднуйтесь -->
+
       <section class="join-section">
-        <h3 class="join-title">Приєднуйтесь</h3>
+        <h3 class="join-section__title">Приєднуйтесь</h3>
         <ul class="join-list">
-          <li class="join-item">
-            <a class="join-icon">
-              <svg class="footer-svg-item" width="20" height="20">
+          <li class="join-list__item">
+            <a class="join-list__link">
+              <svg class="join-list__icon" width="20" height="20">
                 <use href="./images(studio)/symbol-defs.svg#instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="join-item">
-            <a class="join-icon">
-              <svg class="footer-svg-item" width="20" height="20">
+          <li class="join-list__item">
+            <a class="join-list__link">
+              <svg class="join-list__icon" width="20" height="20">
                 <use href="./images(studio)/symbol-defs.svg#twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="join-item">
-            <a class="join-icon">
-              <svg class="footer-svg-item" width="20" height="20">
+          <li class="join-list__item">
+            <a class="join-list__link">
+              <svg class="join-list__icon" width="20" height="20">
                 <use href="./images(studio)/symbol-defs.svg#facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="join-item">
-            <a class="join-icon">
-              <svg class="footer-svg-item" width="20" height="20">
+          <li class="join-list__item">
+            <a class="join-list__link">
+              <svg class="join-list__icon" width="20" height="20">
                 <use href="./images(studio)/symbol-defs.svg#linkedin"></use>
               </svg>
             </a>
           </li>
         </ul>
+      </section>
+
+<!-- Секція підпису -->
+
+      <section class="subscribing-section">
+        <h3 class="subscribing-section__title">Підпишіться на розсилку</h3>
+         <div class="subscribing-section__content">
+          <textarea class="subscribing-section__input" placeholder="E-mail"></textarea>
+        <button type="submit" class="subscribing-section__btn">Підписатись
+          <svg width="24" height="24">
+            <use href="./images(studio)/symbol-defs.svg#telegram">
+            </use>
+          </svg>
+        </button>
+        </div>
       </section>
     </footer>
   </body>
