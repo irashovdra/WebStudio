@@ -44,7 +44,7 @@ nav {
 }
 
 .logo {
-    color: #000000;
+    color: #2196F3;
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.2;
@@ -52,7 +52,7 @@ nav {
 }
 
 .logo--header {
-    color: #2196F3;
+    color: #000000;
 }
 
 /* Список посилань */
@@ -449,7 +449,7 @@ background-position: center;
     margin-right: 0;
 }
 
-.work-list__item:hover .work-inscription {
+.work-list__item:hover .work-list__inscription {
     opacity: 1;
 }
 
@@ -469,7 +469,7 @@ left: 0;
 bottom: 0;
 }
 
-.work-inscription {
+.work-list__inscription {
     font-size: 14px;
 line-height: 1.1;
 text-align: center;
@@ -478,7 +478,7 @@ text-transform: uppercase;
 color: #FFFFFF;
     position: absolute;
     left: 0;
-    bottom: 4px;
+    bottom: 0;
     background: rgba(47, 48, 58, 0.8);
     width: 370px;
 height: 70px;
@@ -488,7 +488,7 @@ align-items: center;
 justify-content: center;
 }
 
-.work-inscription:hover {
+.work-list__inscription:hover {
     opacity: 1;
 }
 
